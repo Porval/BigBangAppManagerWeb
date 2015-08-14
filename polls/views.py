@@ -12,4 +12,7 @@ def index(request):
 def detail(request,question_id):
     return HttpResponse("You're looking at question.")
 
+def apk_detail(request,apk):
+    return HttpResponse("Apk detail " + apk)
+
     # Create your views here.
