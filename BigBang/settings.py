@@ -54,7 +54,7 @@ ROOT_URLCONF = 'BigBang.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['polls/templates'],
+        'DIRS': ['polls/templates','polls/apk'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
