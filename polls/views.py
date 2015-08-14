@@ -1,6 +1,11 @@
 from django.http import HttpResponse
+from django.template import RequestContext, loader
 
 def index(request):
-    return HttpResponse("Hello,World!. You're at the polls index.")
+    template = loader.get_template('polls/index.html')
+    return HttpResponse(template.render())
 
-# Create your views here.
+def detail(request,question_id):
+    return HttpResponse("You're looking at question.")
+
+    # Create your views here.
