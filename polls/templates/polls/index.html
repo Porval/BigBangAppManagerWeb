@@ -1,9 +1,12 @@
-{% if apk_list %}
-    <ul>
-    {% for apk in apk_list %}
-        <li><a href="/polls/apk/{{apk}}/">{{ apk }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>Empty.</p>
-{% endif %}
+
+<div style="text-align:center;">
+  {% if apk_list %}
+      <ul style="margin-top:40px;">
+      {% for apk in apk_list %}
+          <li style="margin-top:20px;"><a style="font-size:18px;" href="/polls/apk/{{apk}}/">{{ apk }}</a></li>
+      {% endfor %}
+      </ul>
+  {% else %}
+      <p>Empty.</p>
+  {% endif %}
+</div>
